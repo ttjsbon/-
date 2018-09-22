@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="body"?
+    <text>{{text}}</text>
+    <button bindtap="add">添加</button>
+  </view?
+</view>

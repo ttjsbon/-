@@ -1,0 +1,10 @@
+<!--insert.wxml-->
+<view>
+  <form bindsubmit='ins_na'>
+    <view>请输入商品名称:</view>
+    <input name='sbxjx' placeholder='商品名称'></input>
+    <button formType='submit'>添加</button>
+  </form>
+  <text>{{resu}}</text>
+  <button bindtap='back'>返回</button>
+</view>

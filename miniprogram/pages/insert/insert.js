@@ -1,0 +1,24 @@
+const db = wx.cloud.database()
+Page({
+	data:{
+		resu:'陈鑫傻逼'
+	},
+	ins_na:function(e){
+		db.collection('spmc').add({
+			data:{
+				sp:e.detail.value.sbxjx
+			},
+			success:res=>{
+				console.log(res)
+				this.setData({
+				  resu: '记录添加成功'
+				})
+		}
+	})
+	},
+	back:function(){
+	  wx.redirectTo({
+		url: '../index_new/index_new',
+	  })
+	}
+})

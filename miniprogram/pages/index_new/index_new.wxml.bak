@@ -1,0 +1,22 @@
+<!--index_new.wxml-->
+<view class="container">
+  <view class="body">
+    <text>{{text1}}</text>
+    <text>{{text2}}</text>
+    <form bindsubmit='formSubmit'>
+      <picker name='dx' bindchange='pick_1' value="{{index}}" range="{{array}}">
+      <view>当前选择：{{array[index]}}</view>
+      </picker>
+      <view>数量:</view>
+      <input name='sbcx' placeholder='数量'></input>
+      <view>吨</view>
+      <view>价格:</view>
+      <input name='pri' placeholder='价格'></input>
+      <view>元/吨</view>
+      <text>{{text3}}</text>
+      <button formType='submit'>添加</button>
+    </form>
+    <text>{{text4}}</text>
+    <button bindtap='sel'>查询</button>
+  </view>
+</view>
